@@ -1,0 +1,63 @@
+/*friends.html*/
+.friend-container{
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    height: auto;
+    margin:10px 8% 0 2%;
+  }
+  .name-container{
+    width: 30%;
+    height: auto;
+    background: #e0e1e4;
+    border-radius: 2rem;
+  }
+  .name-container ul{
+    font-weight: 700;
+    margin-left: 7px;
+    margin-top: 10px;
+  }
+  .pic-name{
+    display: flex;
+    width: 100%;
+    padding-top: 10px;
+  }
+  .pic-name .pic {
+    display: flex;
+    justify-content: center;
+    place-items: center;
+    border: 3px solid #333;
+    border-radius: 50%;
+    overflow: hidden;
+    height: 50px;
+    width: 50px;
+  }
+  .pic-name .pic img{
+    padding: 5px 0 5px 0;
+    width: 40px;
+    height: 40px;
+  }
+  .pic-name .name{
+    margin: 5px 0 0 5px;
+  }
+  .profilePreview-container{
+    width: 60%;
+    height: auto;
+    border-left: 1px solid #333;
+    margin-left: 5px;
+    padding: 5px;
+  }
+  .profile-picture-friend{
+    display: grid;
+    position: absolute;
+    justify-content: center;
+    place-items: center;
+    top: 150px;
+    left: 38%;
+    border: 3px solid #333;
+    border-radius: 50%;
+    overflow: hidden;
+    height: 120px;
+    width: 120px;
+  }
+  /*end friends.html*/

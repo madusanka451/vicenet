@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create New Account</title>
+    <link rel="icon" href="icon/title logo.png" type="image/icon type">
+    <link rel="stylesheet" href="theme/light.css">
+    <script src="action.js"></script>
+</head>
+<body>
+    <div class="Account">
+        <div class="newAccountForm">
+            <form action="" method="post">
+                <div class="formheding">
+                    <h2>Sign Up</h2>
+                </div>
+                <div class="nameInputBox">
+                    <input class="fName" type="text" placeholder="First Name">
+                    <input class="sName" type="text" placeholder="Surname">
+                </div>
+                <div class="inputBox">
+                    <input type="text" placeholder="Username or Email">
+                </div>
+                <div class="inputBox">
+                    <input type="text" placeholder="Email">
+                </div>
+                <div class="inputBox">
+                    <input type="password" placeholder="Create a Password">
+                </div>
+                <div class="inputBox">
+                    <input type="password" placeholder="Re-Type Password">
+                </div>
+                <div class="dateInputBox">
+                    Date of birth
+                    <input type="number" id="day" name="day" min="1" max="31" placeholder="day" class="dateinputBox">
+                    <input type="number" id="month" name="month" min="1" max="12" placeholder="month" class="dateinputBox">
+                    <input type="number" id="year" name="year" min="1900" max="2099" placeholder="Year" class="dateinputBox"> 
+                </div>
+                <div class="genderInputBox">
+                    Male <input type="radio" name="gender" value="">
+                    Female <input type="radio" name="gender" value="">
+                    Other <input type="radio" name="gender" value="">
+                </div>
+                <div class="conditionInput">
+                    <ul>
+                    <a href="" class="Policy">Read Privcy Policy</a>
+                    I Agree<input type="checkbox" class="Agree" value="agree">
+                    </ul>
+                </div>
+                <div class="Sign-Up-btn">
+                    <input type="submit" value="Sign Up" class="Sign-Up">
+                </div>
+            
+                <script>
+                        //<!--get error message enter invalid day and month--> 
+                    const form = document.getElementById("createNewAccount");
+                    const dayInput = document.getElementById("day");
+                    const monthInput = document.getElementById("month");
+                                        
+                    form.addEventListener("submit", (event) => {
+                    if (dayInput.value > 31) {
+                        event.preventDefault();
+                        alert("Invalid day: must be between 1 and 31");
+                        return;
+                    }
+                                        
+                    if (monthInput.value > 12) {
+                        event.preventDefault();
+                        alert("Invalid month: must be between 1 and 12");
+                        return;
+                        }
+                    });
+                </script>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

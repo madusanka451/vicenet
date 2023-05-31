@@ -1,0 +1,98 @@
+/*! upload html documents*/
+:root{
+  --light-content-bg:#f2f2f2;
+  --light-fnt-color:#333;
+  --light-content-color:#666;
+  --light-bg-border:#ccc;
+
+  --primary-btn-bg-color:#1877f2;
+  --primary-btn-hover:#115293;
+}
+.upload-container {
+    background-color: var(--light-content-bg);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  
+  .upload-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .upload-header h3 {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .cancel-btn {
+    background-color: var(--light-content-bg);
+    border: none;
+    border-radius: 5px;
+    color: var(--light-content-color);
+    cursor: pointer;
+    font-size: 14px;
+    padding: 5px 10px;
+    transition: all 0.3s ease;
+  }
+  
+  .cancel-btn:hover {
+    background-color: var(--light-bg-border);
+    color: var(--light-fnt-color);
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-group label {
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  textarea {
+    border: 1px solid var(--light-bg-border);
+    border-radius: 5px;
+    font-size: 14px;
+    padding: 10px;
+    width: 100%;
+    resize: vertical;
+  }
+  
+  .form-group input{
+    background-color: var(--light-content-bg);
+    border: none;
+    border-radius: 5px;
+    color: var(--light-fnt-color);
+    cursor: pointer;
+    display: inline-block;
+    font-size: 14px;
+    padding: 5px 10px;
+    transition: all 0.3s ease;
+  }
+  
+  .form-group input:hover {
+    background-color: var(--light-content-bg);
+    color: var(--light-fnt-color);
+  }
+  
+  .submit-btn {
+    background-color: var(--primary-btn-bg-color);
+    border: none;
+    border-radius: 5px;
+    color: var(--light-content-bg);
+    cursor: pointer;
+    font-size: 14px;
+    padding: 10px;
+    transition: all 0.3s ease;
+  }
+  
+  .submit-btn:hover {
+    background-color: var(--primary-btn-hover);
+  }

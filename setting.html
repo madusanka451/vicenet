@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="stting.css">
+</head>
+<body>
+    <div class="setting-content">
+        <div class="setting-left-margin">
+            <a href="home.html" class="back-btn">Back</a>
+        </div>
+        <div class="setting-menu">
+           <a href="#" class="change-name-btn">Change Profile Name</a>
+           <a href="#" class="change-password-btn">Chnage Password</a>
+           <a href="#" id="logout">LogOut</a>
+           <script>
+            if (window.history && window.history.pushState) {
+              window.history.pushState(null, null, document.URL);
+              window.addEventListener('popstate', function () {
+                window.location.href = 'login.html';
+              });
+            }
+          </script>                    
+        </div>
+        <div class="seeting-preview">
+            <div class="change-name">
+                <h3>Change Profile Name</h3>
+                <form action="" method="post">
+                    <ul>
+                        <input type="text" placeholder="Enter New Name">
+                    </ul>
+                    <ul>
+                        <input type="password" placeholder="Enter Your Password">
+                    </ul>
+                    <ul>
+                        <input type="submit" value="Save">
+                    </ul>
+                </form>
+            </div>
+            <div class="change-password">
+                <h3>Change Password</h3>
+                <form action="" method="post">
+                    <ul>
+                        <input type="password" placeholder="Current Password">
+                    </ul>
+                    <ul>
+                        <input type="password" placeholder="New Pasword">
+                    </ul>
+                    <ul>
+                        <input type="password" placeholder="Retype Password">
+                    </ul>
+                    <ul>
+                        <input type="submit" value="Save">
+                    </ul>
+                </form>
+            </div>
+        </div>
+        <div class="setting-right-margin"></div>
+        <script src="SettingpageAction/showHide.js"></script>
+    </div>
+</body>
+</html>

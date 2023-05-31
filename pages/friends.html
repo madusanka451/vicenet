@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ViceNet</title>
+    <link rel="icon" href="icon/title logo.png" type="image/icon type">
+    <link rel="stylesheet" href="navigation.css">
+    <link rel="stylesheet" href="friends.css">
+    <link rel="stylesheet" href="profile.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+          <a href="#"><img src="icon/logo.png" alt=""></a>
+        </div>
+        <div class="group">
+          <ul class="navigation">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="profile.html">Profile</a></li>
+            <li><a href="friends.html">Friends</a></li>
+            <li><a href="">Settings</a></li>
+            <li><a href="">Privacy</a></li>
+            <li><a href="">Help</a></li>
+          </ul>
+        </div>
+        <img src="icon/icons8-menu-24.png" class="menuToggle">
+        <input type="text" placeholder="Search here...." class="searchBox">
+        <select class="action">
+          <option value="">User</option>
+          <option value="">LogOut</option>
+        </select>
+        <script>
+          let menuToggle = document.querySelector('.menuToggle');
+        let header = document.querySelector('header');
+    
+        menuToggle.onclick = function(){
+            header.classList.toggle('open');
+        }
+        </script>
+      </header>
+
+      <div class="friend-container">
+        <div class="name-container">
+            <ul>All Friends</ul>
+
+            <div class="pic-name">
+              <div class="pic">
+                <img src="icon/photo.png">
+              </div>
+              <div class="name">
+                <ul>Name</ul>
+              </div>
+            </div>
+
+            <div class="pic-name">
+              <div class="pic">
+                <img src="icon/photo.png">
+              </div>
+              <div class="name">
+                <ul>Name</ul>
+              </div>
+            </div>
+
+            <div class="pic-name">
+              <div class="pic">
+                <img src="icon/photo.png">
+              </div>
+              <div class="name">
+                <ul>Name</ul>
+              </div>
+            </div>
+
+            <div class="pic-name">
+              <div class="pic">
+                <img src="icon/photo.png">
+              </div>
+              <div class="name">
+                <ul>Name</ul>
+              </div>
+            </div>
+        </div>
+        <div class="profilePreview-container">
+
+            <div class="content-profile">
+              <main class="photo-container">
+                <div class="profile-cover">
+                  <img src="icon/logo.png">
+                </div>
+                <div class="profile-picture-friend">
+                  <img src="icon/photo.png" alt="Profile Picture">
+                </div>
+              </main>
+      
+              <div class="profileAction">
+                <div class="profile-details">
+                  <h1>John Doe</h1>
+                  <h2>Software Engineer</h2>
+                  <p>Location: New York, NY</p>
+                    <div class="edit-button">
+                      <input type="button" value="Edit Profile">
+                    </div>
+                </div>
+                
+                <div class="profile-bio">
+                  <p class="profile-bio-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget justo in nulla faucibus bibendum in a tellus. Suspendisse vel justo elit. Pellentesque tempor, sem sit amet convallis iaculis, urna augue vestibulum turpis, nec convallis odio dolor id elit. </p>
+                </div>
+              </div>
+              <div class="profile-container">
+                <div class="Action-container">
+                  <div class="box-container post-container">
+                    <h2>Post</h2>
+                    <a href="" class="all-link"><ul>All Post</ul></a>
+                  </div>
+                  <div class="box-container timeline-container">
+                    <h2>Timeline</h2>
+                    <a href="" class="all-link"><ul>Jump to Timeline</ul></a>
+                  </div>
+                  <div class="box-container photos-container">
+                    <h2>Photos</h2>
+                    <a href="" class="all-link"><ul>All Photos</ul></a>
+                  </div>
+                  <div class="box-container friends-container">
+                    <h2>Friends</h2>
+                    <a href="" class="all-link"><ul>All Frinds</ul></a>
+                  </div>
+              </div>
+            </div>
+        </div>
+      </div>
+</body>
+</html>

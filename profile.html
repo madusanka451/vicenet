@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook Profile Page</title>
+    <link rel="icon" href="icon/title logo.png" type="image/icon type">
+    <link id="theme-link" rel="stylesheet" href="theme/light.css">
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <a href="#"><img src="icon/logo.png"></a>
+        <input class="search-box" type="text" placeholder="Search Somthing...">
+      </div>
+      <div class="group">
+        <ul class="navigation">
+          <li><a class="home">Home</a></li>
+          <li><a class="profile">Profile</a></li>
+          <li><a class="friends">Friends</a></li>
+          <li><a class="setting">Settings</a></li>
+          <li><a class="privacy">Privacy</a></li>
+          <li><a class="help">Help</a></li>
+        </ul>
+      </div>
+      <img src="icon/icons8-menu-24.png" class="menuToggle">
+        <div class="theme">
+          <img id="theme-toggle" src="icon/New folder/icons8-moon-and-stars-material-filled/icons8-moon-and-stars-24.png">
+        </div>
+      <!--Dark light theme-->
+      <script src="themeChanger.js"></script>
+      <!--add link to navigation-->
+      <script src="NavigationFunction/navigationLinkEvent.js"></script>
+      <!--menu toggle on responsive-->
+      <script src="NavigationFunction/navigationmenuToggle.js"></script>
+    </header>
+    <!--coover photo-->
+    <div class="cover-header">
+      <div class="cover-pic-container">
+        <img class="cover-pic" src="https://images.unsplash.com/photo-1505228395891-9a51e7e86bf6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1333&q=80">
+      </div>
+    </div>
+    <!--profile photo-->
+    <div class="profile-header">
+      <div class="profile-pic-container">
+        <img class="profile-pic" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80">
+      </div>
+      <div class="profile-menu">
+        <div class="profile-details">
+          <h1 class="profile-name">Sanjaya Madusanka Palihakoon</h1>
+          <a class="about" href="#">About</a>
+        </div>
+        <div class="profile-action">
+          <button class="profile-edit-button">Edit</button>
+        </div>
+      </div>
+    </div>
+    
+    <div class="profile-content">
+      <div class="profile-intro">
+        <h4>Intro</h4>
+        <h5 class="bio-txt">bio.............</h5>
+        <button class="edit-bio">Edit Bio</button>
+        <ul class="intro-details">
+          <li>Studied at</li>
+          <li>Lives at</li>
+          <li>Joined date</li>
+        </ul>
+        <button class="edit-bio">Edit Details</button>
+        <div class="photo-shortcut">
+          <img src="https://images.unsplash.com/photo-1623166075199-c0106f6c201c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80">
+          <img src="https://images.unsplash.com/photo-1468648746436-83fc69277650?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80">
+          <img src="https://images.unsplash.com/photo-1659846490270-58b1e659ddc0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=306&q=80">
+          <img src="https://images.unsplash.com/photo-1559006864-e354747f9c11?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=871&q=80">
+          <img src="https://images.unsplash.com/photo-1548754144-65873dce8beb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=871&q=80">
+          <img src="https://images.unsplash.com/photo-1455734729978-db1ae4f687fc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80">
+        </div>
+        <button class="edit-bio">All Photos</button>
+      </div>
+
+      <div class="profile-feed">
+        <table class="content">
+          <tr>
+              <td class="center">
+                <!-- Create Post bar-->
+                <ul class="post-header">
+                  Post Somthing
+                </ul>
+                <div class="post">
+                  <div class="photo">
+                    <img src="icon/photo.png">
+                    <ul>Upload Photo</ul>
+                    <input type="button" value="Photo" onclick='window.open("uploadPhoto.html","rating","width=500,height=500,left=300,top=200")'>
+                  </div>
+                  <div class="story">
+                    <img src="icon/live-video.png">
+                    <ul>Create Story</ul>
+                    <input type="button" value="Story" onclick='window.open("uploadStory.html","rating","width=500,height=500,left=300,top=200")'>
+                  </div>
+                </div>
+                <!--End Create Post bar-->
+                
+                <!--view post on timeline-->
+                <div class="view-post">
+                  <div class="image"><img src="https://plus.unsplash.com/premium_photo-1681558162102-8cbc200f6d3c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1332&q=80"></div>
+                  <div class="actionBar">
+                    <div class="like">
+                      <a class="likeButton" ><img src="icon/like.png" alt="Like"></a>
+                    </div>
+                    <div class="comment">
+                      <input type="text" placeholder="Add Your Comment">
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="view-post">
+                  <div class="image"><img src="https://images.unsplash.com/photo-1484406566174-9da000fda645?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=389&q=80"></div>
+                  <div class="actionBar">
+                    <div class="like">
+                      <a class="likeButton" ><img src="icon/like.png" alt="Like"></a>
+                    </div>
+                    <div class="comment">
+                      <input type="text" placeholder="Add Your Comment">
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="view-post">
+                  <div class="image"><img src="https://images.unsplash.com/photo-1602491453631-e2a5ad90a131?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=327&q=80"></div>
+                  <div class="actionBar">
+                    <div class="like">
+                      <a class="likeButton" ><img src="icon/like.png" alt="Like"></a>
+                    </div>
+                    <div class="comment">
+                      <input type="text" placeholder="Add Your Comment">
+                    </div>
+                  </div>
+                </div>
+        
+                <div class="view-post">
+                  <div class="image"><img src="https://images.unsplash.com/photo-1474511320723-9a56873867b5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80"></div>
+                  <div class="actionBar">
+                    <div class="like">
+                      <a class="likeButton" ><img src="icon/like.png" alt="Like"></a>
+                    </div>
+                    <div class="comment">
+                      <input type="text" placeholder="Add Your Comment">
+                    </div>
+                  </div>
+                </div>
+        
+                <div class="view-post">
+                  <div class="image"><img src="https://images.unsplash.com/photo-1555169062-013468b47731?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"></div>
+                  <div class="actionBar">
+                    <div class="like">
+                      <a class="likeButton" ><img src="icon/like.png" alt="Like"></a>
+                    </div>
+                    <div class="comment">
+                      <input type="text" placeholder="Add Your Comment">
+                    </div>
+                  </div>
+                </div>
+                <!--end view post on timeline-->
+                <script src="HomepageAction/likeButtonFunction.js"></script>
+              </td>
+          </tr>
+        </table>
+      </div>
+
+    </div>
+  </body>
+</html>
